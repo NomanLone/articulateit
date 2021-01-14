@@ -1,7 +1,18 @@
----
-deployment:
-  tasks:
-    - npm install
-    - npm run build
-    - export DEPLOYPATH=/home/user/public_html/
-    - /bin/cp -R build $DEPLOYPATH
+version: 0.1
+phases:
+  pre_build:
+    commands:
+      - echo Installing source NPM dependencies...
+      - npm install
+  build:
+    commands:
+      - echo Build started on `date`
+      - npm run build
+  post_build:
+    commands:
+      # copy the contents of /build to S3
+      - aws s3 cp --recursive --acl public-read ./dist s3://${BUCKET_ARN}/
+artifacts:
+  files:
+    - '**/*'
+  base-directory: dist
