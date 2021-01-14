@@ -4,7 +4,7 @@ import './index.css';
 
 ReactDOM.render(
   <React.StrictMode>
-    <div>fea</div>
+    <div>Test</div>
   </React.StrictMode>,
   document.getElementById('root')
 );
