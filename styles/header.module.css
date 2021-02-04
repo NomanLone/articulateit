@@ -1,0 +1,15 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 48px;
+}
+
+.links {
+    display: flex;
+    list-style: none;
+}
+
+.link:not(:first-child) {
+ margin-left: 12px;
+}
