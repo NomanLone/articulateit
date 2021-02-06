@@ -1,0 +1,50 @@
+.section {
+  padding: 24px 40px;
+
+  @screen md {
+    padding: 48px 80px;
+  }
+}
+
+.divider {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: #e2e2e2;
+}
+
+.usp {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  flex-direction: column;
+}
+
+.usp:not(:last-child) {
+  margin-bottom: 40px;
+
+  @screen md {
+    margin-right: 80px;
+    margin-bottom: 0
+  }
+}
+
+
+.stepCirlce {
+  margin-bottom: 12px;
+  height: 75px;
+  width: 75px;
+  display: flex;
+  font-weight: 700;
+  color: #9FAFC1;
+  font-size: 24px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #EDF0F4;
+}
+
+.img {
+  width: 220px;
+  height: 110px;
+}
