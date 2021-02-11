@@ -1,5 +1,8 @@
 .section {
   padding: 24px 40px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
 
   @screen md {
     padding: 48px 80px;
@@ -25,10 +28,9 @@
 
   @screen md {
     margin-right: 80px;
-    margin-bottom: 0
+    margin-bottom: 0;
   }
 }
-
 
 .stepCirlce {
   margin-bottom: 12px;
@@ -36,15 +38,35 @@
   width: 75px;
   display: flex;
   font-weight: 700;
-  color: #9FAFC1;
+  color: #9fafc1;
   font-size: 24px;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  background: #EDF0F4;
+  background: #edf0f4;
 }
 
 .img {
   width: 220px;
   height: 110px;
+}
+
+.map {
+  flex: 1 1 100%;
+  margin-top: 32px;
+
+  @screen md {
+    margin-top: 0;
+    flex: 1;
+  }
+}
+
+.socialMedia {
+  display: flex;
+  margin-top: auto;
+}
+
+.contactInfo {
+  opacity: 0.8;
+  margin-top: 32px;
 }

@@ -1,9 +1,13 @@
 import styles from 'styles/Home.module.scss'
 import Header from 'components/Header'
+import Map from 'components/Map'
 import Button from 'components/Button'
 import Head from 'next/head'
 
 export default function Home() {
+  const loadingElementStyle = { height: '100%' };
+  const containerElementStyle = { height: '280px' };
+  const mapElementStyle = { height: '100%' };
   return (
     <>
       <Head>
@@ -116,10 +120,42 @@ export default function Home() {
           </section>
         </div>
         <hr className={styles.divider} />
-        <div className='container mx-auto md:py-10 md:px-20'>
-          <section className={styles.section}>
-            <h2 className='mb-4'>Contact Us</h2>
-
+        <div className='container mx-auto'>
+          <section className={`${styles.section} flex-row`}>
+            <div className='flex-1 flex flex-col'>
+              <h2 className='mb-4'>Contact Us</h2>
+              <div className="flex">
+                <div>
+                  <h5>Copehange, Denmark</h5>
+                  <ul className={styles.contactInfo}>
+                    <li>Address</li>
+                    <li>Email</li>
+                    <li>Number</li>
+                  </ul>
+                </div>
+                <div className='m-auto'>
+                  <h5>Stockholm, Sweden</h5>
+                  <ul className={styles.contactInfo}>
+                    <li>Address</li>
+                    <li>Email</li>
+                    <li>Number</li>
+                  </ul>
+                </div>
+              </div>
+              <ul className={styles.socialMedia}>
+                <li>Twitter</li>
+                <li>Instagram</li>
+                <li>Facebook</li>
+              </ul>
+            </div>
+            <div className={styles.map}>
+              <Map
+                googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyDLHeANYUUoyNt5KivxyiQYER77zExvtac"
+                loadingElement={<div style={loadingElementStyle} />}
+                containerElement={<div style={containerElementStyle} />}
+                mapElement={<div style={mapElementStyle} />}
+              />
+            </div>
           </section>
         </div>
       </main>
