@@ -1,0 +1,52 @@
+.card {
+  background: #fff;
+  margin-bottom: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+  transition: 0.3s;
+  display: flex;
+  overflow: hidden;
+  flex: 1 1 100%;
+  flex-direction: column;
+
+  @screen md {
+    max-width: 33.3333%;
+    flex: 1 1 33.3333%;
+  }
+
+  @screen lg {
+    max-width: 25%;
+    flex: 1 1 25%;
+  }
+}
+
+.cardContent {
+  padding: 24px 32px;
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+}
+
+.card:not(:last-child) {
+  @screen md {
+    margin-right: 40px;
+  }
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgb(0 0 0 / 20%);
+}
+
+.readMore {
+  margin-left: auto;
+  margin-top: auto;
+  text-decoration: underline;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.cardCover {
+  height: 280px;
+  max-height: 100%;
+  width: 100%;
+}

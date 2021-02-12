@@ -1,5 +1,6 @@
 import styles from 'styles/Home.module.scss'
 import Header from 'components/Header'
+import Footer from 'components/Footer'
 import Map from 'components/Map'
 import Button from 'components/Button'
 import Head from 'next/head'
@@ -159,6 +160,7 @@ export default function Home() {
           </section>
         </div>
       </main>
+      <Footer />
     </>
   )
 }

@@ -1,0 +1,33 @@
+.inputField {
+    position: relative;
+    display: block;
+  }
+  
+  .inputLabel {
+    font-size: 16px;
+    font-weight: 700;
+    color: #3b4754;;
+    font-family: inherit;
+  }
+  
+  .inputWrapper {
+    width: 100%;
+    background: #fff;
+    height: 40px;
+    border-radius: 6px;
+    box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.08);
+    border: solid 1px #e1e3e7;
+    display: flex;
+    position: relative;
+    align-items: center;
+  }
+  
+  .input {
+    padding: 0 16px;
+    height: 100%;
+    border-radius: 8px;
+    border: none;
+    background: #fff;
+    width: 100%;
+  }
+    
