@@ -5,7 +5,7 @@ const Input = (props) => {
   const [touched, setTouched] = useState(!!props.defaultValue)
   const [inputValue, setInputValue] = useState(props.defaultValue || '')
 
-  const handleChange = (value: string) => {
+  const handleChange = (value) => {
     setInputValue(value)
     props.handleInputChange()(value)
   }

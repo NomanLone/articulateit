@@ -10,13 +10,13 @@
   flex-direction: column;
 
   @screen md {
-    max-width: 33.3333%;
-    flex: 1 1 33.3333%;
+    max-width: 45%;
+    flex: 1 1 45%;
   }
 
   @screen lg {
-    max-width: 25%;
-    flex: 1 1 25%;
+    max-width: 26%;
+    flex: 1 1 26%;
   }
 }
 
@@ -25,12 +25,6 @@
   display: flex;
   flex: 1 1 auto;
   flex-direction: column;
-}
-
-.card:not(:last-child) {
-  @screen md {
-    margin-right: 40px;
-  }
 }
 
 .card:hover {

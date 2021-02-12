@@ -4,6 +4,10 @@ import Footer from 'components/Footer'
 import Map from 'components/Map'
 import Button from 'components/Button'
 import Head from 'next/head'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEnvelope, faPhone, faBuilding } from '@fortawesome/free-solid-svg-icons'
+import { faHeart, faLifeRing } from '@fortawesome/free-regular-svg-icons'
+import { faFacebook, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons'
 
 export default function Home() {
   const loadingElementStyle = { height: '100%' };
@@ -50,17 +54,17 @@ export default function Home() {
             <p className='w-5/6 mx-auto'>Making Sense of Software. <br /> We ensure all our staff are not only capable at delivering but at communicating so you our customer is comfortable at all stages of the process</p>
             <div className='flex flex-col md:flex-row justify-evenly mt-10 md:mt-20'>
               <div className={styles.usp}>
-                <img className='w-1/4 mb-3' src="/housing-association.svg" alt="" />
+                <span className='mb-3'><FontAwesomeIcon icon={faBuilding} width='60' /></span>
                 <h3 className='mb-5'>Business Results</h3>
                 <p className='text-base'>We are a niche market company providing IT Leadership and specialists which can drive major value to your business</p>
               </div>
               <div className={styles.usp}>
-                <img className='w-1/4 mb-3' src="/favorites.svg" alt="" />
+                <span className='mb-3'><FontAwesomeIcon icon={faHeart} width='60' /></span>
                 <h3 className='mb-5'>Love what you do!</h3>
                 <p className='text-base'>Why do our clients love us? We bring work ethic and clever solutioning to provide fast time to value while having fun</p>
               </div>
               <div className={styles.usp}>
-                <img className='w-1/4 mb-3' src="/favorites.svg" alt="" />
+                <span className='mb-3'><FontAwesomeIcon icon={faLifeRing} width='60' /></span>
                 <h3 className='mb-5'>To the Rescue!</h3>
                 <p className='text-base'>Project in deep trouble, have a problem nobody else can solve? We are experts at taking deep red situations back to green. We believe in sticking with you through the tough times.</p>
               </div>
@@ -129,24 +133,24 @@ export default function Home() {
                 <div>
                   <h5>Copehange, Denmark</h5>
                   <ul className={styles.contactInfo}>
-                    <li>Address</li>
-                    <li>Email</li>
-                    <li>Number</li>
+                    <li className='flex mb-2'><span className='mr-3 flex items-center'><FontAwesomeIcon icon={faBuilding} width='16' /></span>Address</li>
+                    <li className='flex mb-2'><span className='mr-3 flex items-center'><FontAwesomeIcon icon={faEnvelope} width='16' /></span>Email</li>
+                    <li className='flex mb-2'><span className='mr-3 flex items-center'><FontAwesomeIcon icon={faPhone} width='15' /></span>Number</li>
                   </ul>
                 </div>
                 <div className='m-auto'>
                   <h5>Stockholm, Sweden</h5>
                   <ul className={styles.contactInfo}>
-                    <li>Address</li>
-                    <li>Email</li>
-                    <li>Number</li>
+                    <li className='flex mb-2'><span className='mr-3 flex items-center'><FontAwesomeIcon icon={faBuilding} width='16' /></span>Address</li>
+                    <li className='flex mb-2'><span className='mr-3 flex items-center'><FontAwesomeIcon icon={faEnvelope} width='16' /></span>Email</li>
+                    <li className='flex mb-2'><span className='mr-3 flex items-center'><FontAwesomeIcon icon={faPhone} width='15' /></span>Number</li>
                   </ul>
                 </div>
               </div>
               <ul className={styles.socialMedia}>
-                <li>Twitter</li>
-                <li>Instagram</li>
-                <li>Facebook</li>
+                <li className='mr-3'><FontAwesomeIcon icon={faTwitter} width='24' /></li>
+                <li className='mr-3'><FontAwesomeIcon icon={faInstagram} width='24' /></li>
+                <li><FontAwesomeIcon icon={faFacebook} width='24' /></li>
               </ul>
             </div>
             <div className={styles.map}>

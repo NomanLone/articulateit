@@ -11,9 +11,9 @@ const Header = () => {
       <nav>
         <ul className={styles.links}>
           <li className={`${styles.link} ${router.pathname === '/' ? styles.active: ''}`}><a href='/'>Home</a></li>
-          <li className={`${styles.link} ${router.pathname === '/Services' ? styles.active: ''}`}><a href='/Services'>Our Services</a></li>
-          <li className={`${styles.link} ${router.pathname === '/about-us' ? styles.active: ''}`}><a href='/about-us'>About us</a></li>
-          <li className={`${styles.link} ${router.pathname === '/contact' ? styles.active: ''}`}><a href='/contact'>Contact</a></li>
+          <li className={`${styles.link} ${router.pathname === '/Services' ? styles.active: ''}`}><a href='/Services.html'>Our Services</a></li>
+          <li className={`${styles.link} ${router.pathname === '/about-us' ? styles.active: ''}`}><a href='/about-us.html'>About us</a></li>
+          <li className={`${styles.link} ${router.pathname === '/contact' ? styles.active: ''}`}><a href='/contact.html'>Contact</a></li>
         </ul>
       </nav>
       <input className={styles.input} type="text" />
