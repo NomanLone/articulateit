@@ -8,9 +8,9 @@ import Button from 'components/Button'
 
 
 export default function Home() {
-  const [values, setValues] = useState<any>()
+  const [values, setValues] = useState()
 
-  const handleInputChange = (fieldName: string) => (value: string) => {
+  const handleInputChange = (fieldName) => (value) => {
     setValues({
       ...values,
       [fieldName]: value
