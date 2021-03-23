@@ -9,8 +9,35 @@
     }
 }
 
-
 .content {
     display: flex;
     flex-direction: column;
+}
+
+.alert {
+    position: absolute;
+    top: 0;
+}
+
+.button {
+    width: auto;
+    display: block;
+    padding: 8px 32px;
+    align-self: center;
+    font-size: 16px;
+    white-space: nowrap;
+    font-weight: 600;
+    border-radius: 24px;
+    background: #29323d;
+    color: #fff;
+
+    &:disabled {
+        background: rgba(#29323d, 0.6);
+        cursor: not-allowed;
+        pointer-events: all;
+    }
+
+    @screen md {
+        font-size: 20px;
+    }
 }

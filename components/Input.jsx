@@ -24,8 +24,6 @@ const Input = (props) => {
     }
   }
 
-  const valid = (touched && inputValue) ? (!props.error) : null
-
   return (
     <div className={`${styles.inputField} ${props.modifiers ? props.modifiers : ''}`}>
       {props.label && <label htmlFor={props.name} className={styles.inputLabel}>{props.label}</label>}

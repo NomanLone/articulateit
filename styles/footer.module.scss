@@ -1,4 +1,5 @@
 .footer {
+  margin-top: auto;
   border-top: 2px solid#e2e2e2;
   padding: 24px 32px;
   display: flex;
@@ -10,4 +11,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.logo {
+  max-width: 156px;
 }

@@ -16,6 +16,8 @@
     "@fortawesome/react-fontawesome": "^0.1.14",
     "@types/google-map-react": "^2.1.0",
     "autoprefixer": "^10.2.4",
+    "emailjs-com": "^2.6.4",
+    "leaflet": "^1.7.1",
     "next": "10.0.6",
     "postcss": "^8.2.4",
     "react": "17.0.1",

@@ -7,12 +7,12 @@ const Button = (props) => {
     primary: 'primary',
     secondary: 'secondary'
   }
-  
+
   return (
     <button
       className={`${styles.button} ${styles[types[props.type]]} ${props.modifiers ? props.modifiers : ''} ${props.active ? styles.addonActive : ''}`}
-      onClick={(e) => props.handleClick(e)}
-      type='button'
+      onClick={props.handleClick}
+      type={props.buttontype || 'button'}
       disabled={props.disabled}
     >
       {props.label}

@@ -19,93 +19,29 @@ export default function Home() {
           <h2 className='text-center pt-10'>Meet our staff</h2>
           <div className='flex justify-evenly mt-10 flex-wrap p-5'>
             <div className={styles.card}>
-              <a href='#'>
-                <img className={styles.cardCover} src="/placeholder.png" alt="" />
-              </a>
+              <img className={styles.cardCover} src="/Fath.jpg" alt="" />
               <div className={styles.cardContent}>
-                <h3>Fath <br /> Bror Haq-Hansson</h3>
-                <h5>Executive Consultancy Manager</h5>
+                <h3>Bror Haq-Hansson</h3>
+                <h5>Owner - Principal Consultant</h5>
+                <h6>IT Management, PMO, Complicance</h6>
                 <ul className='mt-5'>
-                  <li className='flex'><span className='mr-3 flex items-center'><FontAwesomeIcon width='16' icon={faPhone} /></span> +46 70 235 75 10</li>
-                  <li className='flex'><span className='mr-3 flex items-center'><FontAwesomeIcon width='16' icon={faBuilding} /></span> Stockholm, Sweden</li>
-                  <li className='flex'><span className='mr-3 flex items-center'><FontAwesomeIcon width='16' icon={faEnvelope} /></span> Fath@mail.com</li>
+                  <li className='flex'><span className='mr-3 flex items-center'><FontAwesomeIcon width='16' icon={faPhone} /></span> +46 733 915 815</li>
+                  <li className='flex'><span className='mr-3 flex items-center'><FontAwesomeIcon width='16' icon={faBuilding} /></span> SE/DK – Malmö/Copenhagen</li>
+                  <li className='flex'><span className='mr-3 flex items-center'><FontAwesomeIcon width='16' icon={faEnvelope} /></span> bror@articulateIT.se</li>
                 </ul>
-                <a href="#" className={styles.readMore}>Find out more</a>
               </div>
             </div>
             <div className={styles.card}>
-              <a href='#'>
-                <img className={styles.cardCover} src="/placeholder.png" alt="" />
-              </a>
+              <img className={styles.cardCover} src="/Ehsan.jpg" alt="" />
               <div className={styles.cardContent}>
-                <h3>Fath <br /> Bror Haq-Hansson</h3>
-                <h5>Executive Consultancy Manager</h5>
+                <h3>Ehsan Zonoz</h3>
+                <h5>Partner - Principal Consultant</h5>
+                <h6>IT Management, Delivery Management</h6>
                 <ul className='mt-5'>
-                  <li className='flex'><span className='mr-3 flex items-center'><FontAwesomeIcon width='16' icon={faPhone} /></span> +46 70 235 75 10</li>
-                  <li className='flex'><span className='mr-3 flex items-center'><FontAwesomeIcon width='16' icon={faBuilding} /></span> Stockholm, Sweden</li>
-                  <li className='flex'><span className='mr-3 flex items-center'><FontAwesomeIcon width='16' icon={faEnvelope} /></span> Fath@mail.com</li>
+                  <li className='flex'><span className='mr-3 flex items-center'><FontAwesomeIcon width='16' icon={faPhone} /></span> +46 70 7477750</li>
+                  <li className='flex'><span className='mr-3 flex items-center'><FontAwesomeIcon width='16' icon={faBuilding} /></span> SE – Stockholm</li>
+                  <li className='flex'><span className='mr-3 flex items-center'><FontAwesomeIcon width='16' icon={faEnvelope} /></span> Ehsan@articulateIT.se</li>
                 </ul>
-                <a href="#" className={styles.readMore}>Find out more</a>
-              </div>
-            </div>
-            <div className={styles.card}>
-              <a href='#'>
-                <img className={styles.cardCover} src="/placeholder.png" alt="" />
-              </a>
-              <div className={styles.cardContent}>
-                <h3>Fath <br /> Bror Haq-Hansson</h3>
-                <h5>Executive Consultancy Manager</h5>
-                <ul className='mt-5'>
-                  <li className='flex'><span className='mr-3 flex items-center'><FontAwesomeIcon width='16' icon={faPhone} /></span> +46 70 235 75 10</li>
-                  <li className='flex'><span className='mr-3 flex items-center'><FontAwesomeIcon width='16' icon={faBuilding} /></span> Stockholm, Sweden</li>
-                  <li className='flex'><span className='mr-3 flex items-center'><FontAwesomeIcon width='16' icon={faEnvelope} /></span> Fath@mail.com</li>
-                </ul>
-                <a href="#" className={styles.readMore}>Find out more</a>
-              </div>
-            </div>
-            <div className={styles.card}>
-              <a href='#'>
-                <img className={styles.cardCover} src="/placeholder.png" alt="" />
-              </a>
-              <div className={styles.cardContent}>
-                <h3>Fath <br /> Bror Haq-Hansson</h3>
-                <h5>Executive Consultancy Manager</h5>
-                <ul className='mt-5'>
-                  <li className='flex'><span className='mr-3 flex items-center'><FontAwesomeIcon width='16' icon={faPhone} /></span> +46 70 235 75 10</li>
-                  <li className='flex'><span className='mr-3 flex items-center'><FontAwesomeIcon width='16' icon={faBuilding} /></span> Stockholm, Sweden</li>
-                  <li className='flex'><span className='mr-3 flex items-center'><FontAwesomeIcon width='16' icon={faEnvelope} /></span> Fath@mail.com</li>
-                </ul>
-                <a href="#" className={styles.readMore}>Find out more</a>
-              </div>
-            </div>
-            <div className={styles.card}>
-              <a href='#'>
-                <img className={styles.cardCover} src="/placeholder.png" alt="" />
-              </a>
-              <div className={styles.cardContent}>
-                <h3>Fath <br /> Bror Haq-Hansson</h3>
-                <h5>Executive Consultancy Manager</h5>
-                <ul className='mt-5'>
-                  <li className='flex'><span className='mr-3 flex items-center'><FontAwesomeIcon width='16' icon={faPhone} /></span> +46 70 235 75 10</li>
-                  <li className='flex'><span className='mr-3 flex items-center'><FontAwesomeIcon width='16' icon={faBuilding} /></span> Stockholm, Sweden</li>
-                  <li className='flex'><span className='mr-3 flex items-center'><FontAwesomeIcon width='16' icon={faEnvelope} /></span> Fath@mail.com</li>
-                </ul>
-                <a href="#" className={styles.readMore}>Find out more</a>
-              </div>
-            </div>
-            <div className={styles.card}>
-              <a href='#'>
-                <img className={styles.cardCover} src="/placeholder.png" alt="" />
-              </a>
-              <div className={styles.cardContent}>
-                <h3>Fath <br /> Bror Haq-Hansson</h3>
-                <h5>Executive Consultancy Manager</h5>
-                <ul className='mt-5'>
-                  <li className='flex'><span className='mr-3 flex items-center'><FontAwesomeIcon width='16' icon={faPhone} /></span> +46 70 235 75 10</li>
-                  <li className='flex'><span className='mr-3 flex items-center'><FontAwesomeIcon width='16' icon={faBuilding} /></span> Stockholm, Sweden</li>
-                  <li className='flex'><span className='mr-3 flex items-center'><FontAwesomeIcon width='16' icon={faEnvelope} /></span> Fath@mail.com</li>
-                </ul>
-                <a href="#" className={styles.readMore}>Find out more</a>
               </div>
             </div>
           </div>
